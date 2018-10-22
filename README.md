@@ -1,5 +1,5 @@
 # Ethereum-class-HW1
-1.Please compare hash function and cryptographic hash function and give an example.
+1.Please compare hash function and cryptographic hash function and give an example.<br>
 Hash function 把訊息或資料壓縮成摘要，使得資料量變小，將資料的格式固定下來。資料經過函式產生雜湊值，而雜湊值就當作是陣列的索引，資料就儲存在這個索引的位置中。雜湊值通常用一個短的隨機字母和數字組成的字串來代表。
 Hash function的特性為運算速度快、不可逆性(困難度很高)、可能有衝突(因為hash出來是固定長度，所以還是有極低的可能性有衝突)、Hash值平均分布(隨機)。
 而cryptographic hash function為hash function的其中一種，所以具有以上Hash function的特性。相較於non cryptographic hash function，它更具安全性，能防止惡意攻擊。
