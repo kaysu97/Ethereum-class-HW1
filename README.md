@@ -15,6 +15,7 @@ BLAKE2、SHA-2…為cryptographic hash的一種，其應用為: 數位簽章，�
 2.Peter is a noob in cryptocurrency and would like to get some Ethers. First step for him is to have an Ethereum account. He decides to generate an account and manages the wallet himself so he can understand the principles behind. From the class, he knows the account is created by the following steps:<br>
 a. Can you print the private/public key with hex string representation? Please give us an example.<br>
 程式碼:<br>
+`
 const Wallet = require('ethereumjs-wallet');<br>
 const keccak256 = require('js-sha3').keccak256;<br>
 // keypair<br>
@@ -28,6 +29,7 @@ console.log("pubKey:", pubKey.toString('hex'));<br>
 // address<br>
 let address = wallet.getAddressString();<br>
 console.log("address:", address.toString('hex'));<br>
+`
 結果:<br>
 privKey: <br>
 f940288c4992ad60fcbe0c255edd0a9ec732682ae55c7bbcb916f013a4556f9a<br>
